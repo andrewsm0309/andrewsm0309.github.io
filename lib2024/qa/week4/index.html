@@ -1,0 +1,148 @@
+<!-- doctype html tag tells the browser that this HTML document  -->
+<!-- this is called doctype declaration -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week 4 - Basic HTML Tags</title>
+	<!-- this s the taf that tells the browser which characterset you are using -->
+	<meta charset="utf-8">
+	<!-- meta tags are important to determine the SEO of a webpage -->
+	<!-- SEO = Search Engine Optimizer -->
+	<meta name="description" content="This is an HTML document containing HTML tags">
+	<!-- meta keyowrds is the the seo specific tag fucking blah -->
+	<meta name="keywords" content="HTML, HMTL5, Tags, Basic HTML, Standard Tags">
+	<!-- meta robots tag can have a combination of the following values: index - index this page in the search repository
+	noindex - do not index this page
+	follow - tells search engine to follow all changes to this page
+	nofollow - tells search engine to not follow this page-->
+	<meta name="robots" content="noindex, nofollow">
+<body>
+	<!-- header is semantic tag that tells the browser that the content of this tag has the most importance and must be rendered with the highest priority -->
+	<!-- all of the content in the header tag is 'heading content' -->
+	<!-- header is one of the many semantic tags introduced in html5 -->
+	<header>
+		<!-- heading tag can have h1-h6 -->
+		<!-- h1 most important, h6 least -->
+		<h1>Week 4 - Basics of HTML</h1>
+
+		<!-- nav tag is used to create navigation for a web page -->
+		<!-- there can be more than one nav tage for a document -->
+		<!-- nav is just a container and not actual navigation -->
+		<nav>
+			<!-- ul is child tag of nav and is used to create navigation links list -->
+			<ul>
+				<!-- li tags are used to create list elements of a navigation -->
+				<li>
+					<!-- a tag is used to create links in html documents -->
+					<!-- a tag is the only tag that can create tags in a document -->
+					<!-- href is the attribute of a tag that tells the browser where to link this tag, also called anchor tag bc you're anchoring the tag to a link -->
+					<!-- attribute is additional information that is used to enhance the functionality of a tag -->
+					<a href="https://algonquincollege.com" title="The Gonq">Link 1</a>
+				</li>
+				<li>
+					<!-- title attribute is used for additional information that needs to be provided to the user about this specific link -->
+					<!-- title attribute is also a requirement for html validation -->
+					<!-- titles are for the hover titles only -->
+					<a href="https://google.com" title="The Google">Link 2</a>
+				</li>
+				<li>
+					<!-- target attribute for an anchor tag is used to tell the browser how to handle opening the link -->
+					<!-- target="_blank" tells the browser to open the link in a new window -->
+					<a href="https://Lynda.com" title="Lynda listen hunny" target="_blank"> Link 3 </a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- main tag is the semantic tag used to specifiy the main body of html document -->
+	<main>
+		<p>Paragraph in the main tag</p>
+		<!-- div tag is the most generic content folder used in html -->
+		<!-- it is used to create sections, containers and text itself -->
+		<!-- div tag does not follow the semantic rendering therefore it can be a parent or child of any tag except a line tags and p tag -->
+		<!-- div tag is an example of block level element -->
+		<!-- a block level element takes the entire width of a page and pushes the next tag to the next line when rendering -->
+		<div>
+			Content in a div tag
+		</div>
+		<!-- section tag is html5 semantic tag that is used to specifiy various sections in an html body -->
+		<!-- just a contianer similar to nav and header tags and content is called section content -->
+		<section>
+			<!-- article tag is used to create the content/text for html document -->
+			<!-- note: article tag as any other semantic tag is also known as a structural element -->
+			<article>
+				<h2>Main Text</h2>
+				<p>Paragraph inside an article</p>
+				<p>Paragraph 2 </p>
+				<p>
+					<!-- span is an inline element -->
+					<!-- inline elements render according to its content -->
+					<!-- the space taken by inline elements is decided by its content and not the tag propertied -->
+					<span>span 2</span>
+						<span>span 4</span>	
+					</div>
+				</p>
+				<p> This text is <b>b-b-b-b-b-b-b-b-b-Bold</b></p>
+				<p><i>I-talics</i> for I-talians</p>
+				<p><u>underline</u> because you can</p>
+				<!-- child element always inherits the parent element properties (and the gparents too) -->
+				<p>
+					<b>
+						<i>
+							<u>
+								I declare this shall be ALL the things
+							</u>
+						</i>
+					</b>
+								
+				</p>
+			</article>
+			<!-- aside tag is another structural/semantic element that is used to create less important text instruction for a page -->
+			<aside>
+				<h3>You've heard of side ho but now get ready Aside Ho</h3>
+				<nav>
+					<!-- side list 1 -->
+					<ul>
+						<li>
+							<a href="https://whos-to-know.tumblr.com">it me</a>
+						</li>
+						<li>
+							<!-- side sub sub list -->
+							<ul>
+								<li>Sub Sub List 1</li>
+								<ol>
+									<li>sub sub sub sub</li>
+									<li>sub de sub sub</li>
+								</ol>
+								<li>sub sub list 2</li>
+								<!-- ol is being used as a sublist to the sublist -->
+								<ol>
+									<li>sub sub sub 1</li>
+									<li>sub sub sub 2</li>
+								</ol>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+		</section>
+	</main>
+	<div>div outside main</div>
+
+	<!-- outisde main, inside body -->
+	<!-- footer is also a structural tag used to define footer of html document -->
+	<footer>
+		<p>it the footer u kno</p>
+
+		<section>
+			<p>Section 1</p>
+		</section>
+		<section>
+			<p>Section 2</p>
+		</section>
+		<section>
+			<p>Section 3</p>
+		</section>
+	</footer>
+<!-- block level elements are tags that take up the entire line because they fancy first class hoes -->
+</body>
+</html>
