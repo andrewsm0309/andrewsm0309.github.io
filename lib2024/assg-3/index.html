@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<title>Assignment 3 - Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div id="wrapper" class="wrapper">
+		<header>
+			<h1>Registration Form</h1>
+		</header>
+		<section id="html-forms" class="main-section">
+			<form action="somepage.php" method="get">
+				
+				<div id="fn-container" class="form-elm">
+					<label for="FirstName">First Name</label>
+					<input type="text" name="FirstName" id="FirstName" placeholder="Enter first name here" required>
+				</div>
+				
+				<div id="ln-container" class="form-elm">
+					<label for="LastName">Last Name</label>
+					<input type="text" name="LastName" id="LastName" placeholder="Enter last name here" required>
+				</div>
+
+
+				<div id="email-container" class="form-elm">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+				</div>
+
+				<div id="pass-container" class="form-elm">
+					<label for="pass">Password</label>
+					<input type="password" name="pass" id="pass" required>
+				</div>
+
+				<div id="int-container" class="form-elm">
+					<label for="intro">Introductory Text</label>
+					<textarea name="intro" id="intro" placeholder="Enter text here"></textarea>
+				</div>
+				
+				<div id="date-container" class="form-elm">
+					<label for="date">Date of Birth</label>
+					<input type="date" name="date" id="date" required>
+				</div>
+				
+				<div id="tel-container" class="form-elm">
+					<label for="tel">Mobile Number</label>
+					<input type="tel" id="tel" name="tel" required>
+				</div>
+
+				<div id="gen-container" class="form-elm">
+					<h4>Gender</h4>
+					<label for="csfem">
+						<input type="radio" name="gen-form" id="csfem" value="csfem">
+						Cisgender female
+					</label>
+					<br>
+					<label for="csmal">
+						<input type="radio" name="gen-form" id="csmal" value="csmal">
+						Cisgender male
+					</label>
+					<br>
+					<label for="nb">
+						<input type="radio" name="gen-form" id="nb" value="nb">
+						Non-binary/third gender
+					</label>
+					<br>
+					<label for="trfem">
+						<input type="radio" name="gen-form" id="trfem" value="trfem">
+						Transgender female
+					</label>
+					<br>
+					<label for="trmal">
+						<input type="radio" name="gen-form" id="trmal" value="trmal">
+						Transgender male
+					</label>
+					<br>
+					<label for="pnts">
+						<input type="radio" name="gen-form" id="pnts" value="pnts">
+						Prefer not to say
+					</label>
+				</div>
+				<br>
+				
+				<div id="add-container" class="form-elm">
+					<label for="add">Address</label>
+					<input type="text" name="add" id="add" placeholder="123 ABC St" required>
+				</div>
+
+				<div id="cit-container" class="form-elm">
+					<label for="post">City</label>
+					<input type="text" name="city" id="city" placeholder="City name goes here" required>
+				</div>
+
+				<div id="prov-contianer" class="form-elm">
+					<label for="prov">Province</label>
+					<select id="prov" name="prov">
+						<optgroup label="Canada">
+							<option value="select">Select
+							</option>
+							<option value="ab">Alberta</option>
+							<option value="bc">British Columbia</option>
+							<option value="mb">Manitoba</option>
+							<option value="nb">New Brunswick</option>
+							<option value="nl">Newfoundland and Labrador</option>
+							<option value="nt">Northwest Territories</option>
+							<option value="ns">Nova Scotia</option>
+							<option value="nu">Nunavut</option>
+							<option value="on">Ontario</option>
+							<option value="pe">Prince Edward Island</option>
+							<option value="qc">Quebec</option>
+							<option value="sk">Saskatchewan</option>
+							<option value="yt">Yukon</option>
+						</optgroup>	
+
+						<optgroup label="United States">
+							<option value="al">Alabama</option>
+							<option value="ak">Alaska</option>
+							<option value="az">Arizona</option>
+							<option value="ar">Arkansas</option>
+							<option value="ca">California</option>
+							<option value="co">Colorado</option>
+							<option value="ct">Connecticut</option>
+							<option value="de">Delaware</option>
+							<option value="dc">District of Columbia</option>
+							<option value="fl">Florida</option>
+							<option value="ga">Georgia</option>
+							<option value="hi">Hawaii</option>
+							<option value="id">Idaho</option>
+							<option value="il">Illinois</option>
+							<option value="in">Indiana</option>
+							<option value="ia">Iowa</option>
+							<option value="ks">Kansas</option>
+							<option value="ky">Kentucky</option>
+							<option value="la">Louisiana</option>
+							<option value="me">Maine</option>
+							<option value="md">Maryland</option>
+							<option value="ma">Massachusetts</option>
+							<option value="mi">Michigan</option>
+							<option value="mn">Minnesota</option>
+							<option value="ms">Mississippi</option>
+							<option value="mo">Missouri</option>
+							<option value="mt">Montana</option>
+							<option value="ne">Nebraska</option>
+							<option value="nv">Nevada</option>
+							<option value="nh">New Hampshire</option>
+							<option value="nj">New Jersey</option>
+							<option value="nm">New Mexico</option>
+							<option value="ny">New York</option>
+							<option value="nc">North Carolina</option>
+							<option value="nd">North Dakota</option>
+							<option value="oh">Ohio</option>
+							<option value="ok">Oklahoma</option>
+							<option value="or">Oregon</option>
+							<option value="pa">Pennsylvania</option>
+							<option value="ri">Rhode Island</option>
+							<option value="sc">South Carolina</option>
+							<option value="sd">South Dakota</option>
+							<option value="tn">Tennessee</option>
+							<option value="tx">Texas</option>
+							<option value="ut">Utah</option>
+							<option value="vt">Vermont</option>
+							<option value="va">Virginia</option>
+							<option value="wa">Washington</option>
+							<option value="wv">West Virginia</option>
+							<option value="wi">Wisconsin</option>
+							<option value="wy">Wyoming</option>
+						</optgroup>	
+					</select>
+				</div>
+
+				<div id="coun-contianer" class="form-elm">
+					<label for="country">Country</label>
+					<select id="country" name="country">
+							<option value="choose">Select
+							</option>
+							<option value="can">Canada</option>
+							<option value="us">United States</option>
+					</select>
+				</div>
+
+				<div id="pc-container" class="form-elm">
+					<label for="post">Postal Code</label>
+					<input type="text" name="post" id="post" placeholder="A1A 1A1" required>
+				</div>
+
+				<div id="hobby-container" class="form-elm">
+					<h4>Hobbies and Interests</h4>
+					<input type="checkbox" name="hobb" id="sport" value="sport">
+					<label for="sport">Sports</label>
+					 <br>
+					
+					<input type="checkbox" name="hobb" id="craft" value="craft">
+					<label for="craft">Crafts</label>
+					 <br>
+
+					<input type="checkbox" name="hobb" id="read" value="read">
+					<label for="read">Reading/Writing</label>
+					 <br>
+
+					 <input type="checkbox" name="hobb" id="cook" value="cook">
+					<label for="cook">Cooking</label>
+					 <br>
+
+					 <input type="checkbox" name="hobb" id="art" value="art">
+					<label for="art">Art</label>
+					 <br>
+				</div>
+					<br>
+				<div id="url-container" class="form-elm">
+					<label for="ur">Enter a URL:</label>	
+					<input type="url" name="ur" id="ur"><br>
+				</div>
+			<br>
+				<button type="submit">Submit</button>
+				<button type="reset">Reset</button>
+			</form>
+		</section>
+	</div>
+</body>
+</html>
